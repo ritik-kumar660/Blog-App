@@ -99,4 +99,4 @@ Building **Ritik.dev** was a journey into deep full-stack engineering. Key takea
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Developed with ❤️ by [Ritik Kumar](https://github.com/ritik-kumar)
+Developed with ❤️ by [Ritik Kumar](https://github.com/ritik-kumar660)
