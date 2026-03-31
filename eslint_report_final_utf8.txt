@@ -1,0 +1,145 @@
+﻿
+> blog-app@0.1.0 lint
+> eslint
+
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\actions\auth.ts
+  100:12  warning  '_error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\admin\layout.tsx
+  8:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\admin\page.tsx
+   10:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   10:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   37:66  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   50:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  118:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  171:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\admin\data\route.ts
+   7:27  warning  'req' is defined but never used           @typescript-eslint/no-unused-vars
+  10:38  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\admin\users\[id]\route.ts
+  17:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\ai\generate\route.ts
+  125:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\notifications\route.ts
+   8:27  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+  30:29  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\posts\[id]\comments\[commentId]\like\route.ts
+  24:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\posts\[id]\comments\[commentId]\route.ts
+  12:13  warning  'id' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  67:38  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\posts\[id]\route.ts
+  95:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\upload\route.ts
+  31:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  34:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\api\user\avatar\route.ts
+  29:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\auth\login\page.tsx
+  39:14  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\author\[id]\page.tsx
+   6:8   warning  'Image' is defined but never used         @typescript-eslint/no-unused-vars
+  25:34  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\blog\[slug]\page.tsx
+  65:69  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  70:57  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  76:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  77:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  78:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  79:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  91:57  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\dashboard\page.tsx
+  19:9  warning  'stats' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\dashboard\saved\page.tsx
+  44:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\page.tsx
+   3:29  warning  'CardDescription' is defined but never used  @typescript-eslint/no-unused-vars
+  21:16  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  27:20  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  47:56  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  58:41  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  59:28  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  60:33  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  61:32  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  66:58  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\profile\page.tsx
+   95:21  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  156:16  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\search\page.tsx
+  68:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  95:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\trending\page.tsx
+  27:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  38:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  40:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\app\write\page.tsx
+  48:5  warning  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\auth.ts
+  119:34  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  129:39  warning  'session' is defined but never used       @typescript-eslint/no-unused-vars
+  133:31  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  134:35  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  155:26  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\AIAssistant.tsx
+  6:3  warning  'Wand2' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\CommentsSection.tsx
+   29:12  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+  223:48  warning  'previouslyLiked' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\DeletePostButton.tsx
+  28:14  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\Editor.tsx
+  40:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\FollowButton.tsx
+  17:10  warning  'count' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\Navbar.tsx
+  103:55  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\PostInteractions.tsx
+   53:14  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+   76:14  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+  104:16  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\components\UserAvatar.tsx
+  37:7  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\lib\mongodb.ts
+  16:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  19:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\RITIK KUMAR\OneDrive\Projects\Blog-App\src\lib\nodemailer.ts
+  35:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  73:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 72 problems (51 errors, 21 warnings)
+

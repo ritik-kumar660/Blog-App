@@ -1,0 +1,23 @@
+import { auth } from "@/auth";
+import { NextResponse } from "next/server";
+
+export default auth((req) => {
+  const isBanned = req.auth?.user?.isBanned;
+  const isApiRequest = req.nextUrl.pathname.startsWith("/api");
+
+  // Prevent API interactions for banned users
+  // We allow /api/auth/* because they need to be able to sign out or check status
+  if (isBanned && isApiRequest && !req.nextUrl.pathname.startsWith("/api/auth")) {
+    return NextResponse.json(
+      { error: "Account suspended. Please contact support." },
+      { status: 403 }
+    );
+  }
+
+  return NextResponse.next();
+});
+
+// Run middleware on all API routes except auth
+export const config = {
+  matcher: ["/api/:path*"],
+};

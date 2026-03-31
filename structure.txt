@@ -1,0 +1,71 @@
+Folder PATH listing for volume OS
+Volume serial number is 4893-72A8
+C:\USERS\RITIK KUMAR\ONEDRIVE\PROJECTS\BLOG-APP\SRC
+|   auth.ts
+|   
++---actions
+|       auth.ts
+|       
++---app
+|   |   favicon.ico
+|   |   globals.css
+|   |   layout.tsx
+|   |   page.tsx
+|   |   
+|   +---about
+|   |       page.tsx
+|   |       
+|   +---api
+|   |   \---auth
+|   |       \---[...nextauth]
+|   |               route.ts
+|   |               
+|   +---auth
+|   |   +---login
+|   |   |       page.tsx
+|   |   |       
+|   |   \---register
+|   |           page.tsx
+|   |           
+|   +---blog
+|   |   |   page.tsx
+|   |   |   
+|   |   \---[slug]
+|   |           page.tsx
+|   |           
+|   +---contact
+|   |       page.tsx
+|   |       
+|   +---dashboard
+|   |   |   layout.tsx
+|   |   |   page.tsx
+|   |   |   
+|   |   \---write
+|   |           page.tsx
+|   |           
+|   +---profile
+|   |       page.tsx
+|   |       
+|   \---write
+|           page.tsx
+|           
++---components
+|   |   Editor.tsx
+|   |   Navbar.tsx
+|   |   Providers.tsx
+|   |   
+|   \---ui
+|           button.tsx
+|           card.tsx
+|           dialog.tsx
+|           input.tsx
+|           label.tsx
+|           
++---lib
+|       mongodb.ts
+|       utils.ts
+|       
+\---models
+        Post.ts
+        User.ts
+        
