@@ -114,27 +114,27 @@ export default function AIAssistant({ content, onApplyTitle, onApplyTags, onAppl
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-3 max-w-[calc(100vw-2rem)]">
       {/* Panel */}
       {open && (
-        <div className="w-[380px] max-h-[80vh] overflow-y-auto rounded-2xl border border-border/50 bg-background/95 backdrop-blur-xl shadow-2xl shadow-primary/10 flex flex-col">
+        <div className="w-full sm:w-[380px] max-h-[70vh] sm:max-h-[80vh] overflow-y-auto rounded-2xl border border-border/50 bg-background/95 backdrop-blur-xl shadow-2xl shadow-primary/10 flex flex-col">
           {/* Header */}
-          <div className="flex items-center justify-between px-5 py-4 border-b border-border/50 sticky top-0 bg-background/95 backdrop-blur-xl z-10">
+          <div className="flex items-center justify-between px-4 sm:px-5 py-3 sm:py-4 border-b border-border/50 sticky top-0 bg-background/95 backdrop-blur-xl z-10">
             <div className="flex items-center gap-2">
-              <Sparkles size={18} className="text-primary" />
-              <span className="font-bold text-base">AI Writing Assistant</span>
+              <Sparkles size={16} className="text-primary sm:size-[18px]" />
+              <span className="font-bold text-sm sm:text-base">AI Writing Assistant</span>
             </div>
-            <button onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors p-1">
               <X size={18} />
             </button>
           </div>
 
-          <div className="p-4 space-y-3">
+          <div className="p-3 sm:p-4 space-y-3 font-sans">
             {/* Action Buttons */}
             {MODES.map((m) => (
               <div key={m.id} className="rounded-xl border border-border/50 bg-muted/30 overflow-hidden">
                 <button
-                  className="w-full flex items-center gap-3 p-3.5 text-left hover:bg-foreground/5 transition-colors"
+                  className="w-full flex items-center gap-2.5 sm:gap-3 p-3 sm:p-3.5 text-left hover:bg-foreground/5 transition-colors disabled:opacity-50"
                   onClick={() => run(m.id)}
                   disabled={loading}
                 >
@@ -142,13 +142,14 @@ export default function AIAssistant({ content, onApplyTitle, onApplyTags, onAppl
                     <m.icon size={16} className="text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-sm">{m.label}</p>
-                    <p className="text-xs text-muted-foreground mt-0.5 leading-snug">{m.description}</p>
+                    <p className="font-semibold text-xs sm:text-sm">{m.label}</p>
+                    <p className="text-[10px] sm:text-xs text-muted-foreground mt-0.5 leading-snug">{m.description}</p>
                   </div>
                   {loading && activeMode === m.id && (
                     <Loader2 size={16} className="animate-spin text-primary shrink-0" />
                   )}
                 </button>
+
 
                 {/* Topic input for draft mode */}
                 {m.id === "draft" && (

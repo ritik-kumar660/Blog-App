@@ -77,12 +77,13 @@ export default async function Home({
         <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/20 blur-[100px] rounded-full pointer-events-none -translate-y-1/2" />
 
         <div className="max-w-4xl text-center z-10 space-y-6">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50 leading-[1.1]">
             Publish your passions, your way.
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mx-auto max-w-2xl">
+          <p className="text-lg md:text-2xl text-muted-foreground mx-auto max-w-2xl px-4">
             Create a unique and beautiful blog easily. Discover amazing creators and join a community of thinkers.
           </p>
+
           <div className="pt-8 flex gap-4 justify-center">
             {session ? (
               <Link href="/write">

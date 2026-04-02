@@ -78,6 +78,16 @@
   }
 }
 
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 /* Tiptap Placeholder Styles */
 .tiptap p.is-editor-empty:first-child::before {
   content: attr(data-placeholder);
@@ -90,3 +100,4 @@
 .dark .tiptap p.is-editor-empty:first-child::before {
   color: #495057;
 }
+
