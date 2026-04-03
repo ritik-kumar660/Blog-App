@@ -9,6 +9,7 @@ import PostInteractions from '@/components/PostInteractions';
 import CommentsSection from '@/components/CommentsSection';
 import FollowButton from '@/components/FollowButton';
 import UserAvatar from '@/components/UserAvatar';
+import ReaderAssistant from '@/components/ReaderAssistant';
 
 export async function generateMetadata({
   params,
@@ -148,6 +149,9 @@ export default async function BlogPostPage({
       
       {/* Discussion Thread */}
       <CommentsSection postId={post._id} />
+      
+      {/* AI Reader Assistant */}
+      <ReaderAssistant content={post.content || ""} />
     </article>
   );
 }

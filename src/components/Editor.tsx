@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Placeholder from '@tiptap/extension-placeholder';
@@ -41,6 +42,13 @@ export default function PremiumEditor({ content, onChange }: EditorProps) {
       onChange(editor.getHTML());
     },
   });
+
+  // Sync content from props if changed externally (e.g. by AI assistant)
+  useEffect(() => {
+    if (editor && content !== editor.getHTML()) {
+      editor.commands.setContent(content);
+    }
+  }, [content, editor]);
 
   if (!editor) {
     return null;

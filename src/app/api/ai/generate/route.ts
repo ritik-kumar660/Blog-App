@@ -72,6 +72,32 @@ const PROMPTS: Record<string, (content: string, extra?: string) => string> = {
     - Return ONLY clean HTML content (using <p>, <h2>, <strong>, <em>, <ul>, <li> tags only)
     - Do NOT include a title tag or meta-commentary
   `,
+  
+  takeaways: (content) => `
+    You are an expert content analyzer.
+    Read the following blog post and extract the 3-5 most important key takeaways or bullet points.
+    Make them concise, actionable, and valuable to the reader.
+    Return ONLY the takeaways as a clean HTML unordered list (<ul> and <li> tags).
+    No introductory text.
+
+    Content:
+    """
+    ${content.replace(/<[^>]+>/g, '').substring(0, 5000)}
+    """
+  `,
+
+  simplify: (content) => `
+    You are an expert communicator who can explain complex topics to anyone.
+    Read the following blog post and rewrite its main message and core concepts in a "Explain Like I'm 5" (ELI5) style.
+    Use simple language, analogies, and short sentences.
+    Return ONLY the simplified version as clean HTML (using <p>, <ul>, <li> tags).
+    No introductory text.
+
+    Content:
+    """
+    ${content.replace(/<[^>]+>/g, '').substring(0, 5000)}
+    """
+  `,
 };
 
 export async function POST(req: NextRequest) {
