@@ -1,4 +1,4 @@
-# Ritik.dev — A Multi User  Modern Blog Platform
+# Ritik.dev — An AI Integrated Multi User  Modern Blog Platform
 
 [![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://ritikblog.vercel.app)
 [![Next.js](https://img.shields.io/badge/Next.js_16-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
